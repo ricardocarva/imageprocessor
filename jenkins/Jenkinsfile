@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'pwd'
+                sh 'make build'
+            }
+        }
+        stage('Run') {
+            steps {
+                sh 'pwd'
+                sh 'make build'
+            }
+        }
+    }
+}
