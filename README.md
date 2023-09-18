@@ -16,9 +16,12 @@ Combine 4 imgs into one
 
 We also test if the results from our images match the expected output.
 
+```
 make build
 make test
 make run
+
+```
  ![tests.png](tests.png)
 
 For instance, adding 200 to the value Green.
