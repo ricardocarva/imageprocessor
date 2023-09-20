@@ -7,10 +7,22 @@ pipeline {
                 sh 'make build'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'pwd'
+                sh 'make test'
+            }
+        }
         stage('Run') {
             steps {
                 sh 'pwd'
                 sh 'make build'
+            }
+        }
+        stage('Clean') {
+            steps {
+                sh 'pwd'
+                sh 'make clean'
             }
         }
     }
